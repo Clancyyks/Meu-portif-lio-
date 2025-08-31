@@ -1,0 +1,115 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.hero {
+  background: linear-gradient(135deg, #1f6feb, #652386);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero .highlight {
+  color: #000000;
+}
+
+.btn {
+  background: #238636;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2ea043;
+}
+
+/* Layout principal */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+/* Cards */
+.card {
+  background:linear-gradient(135deg,#23152a, #131f30);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.card h2, .card h3 {
+  margin-bottom: 10px;
+}
+
+/* Serviços em Grid */
+.servicos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.box {
+  background: #0d170d;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box h3 {
+  margin-bottom: 10px;
+  color: #077682;
+}
+
+.box p {
+  margin-bottom: 10px;
+}
+
+/* Links úteis */
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  margin: 8px 0;
+}
+
+.links a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
